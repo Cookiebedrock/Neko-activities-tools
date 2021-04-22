@@ -1,129 +1,81 @@
 <template>
   <v-container class="background" fluid>
-    <v-row class="text-center">
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">Welcome to Vuetify</h1>
+    <v-col>
+      <v-card class="mx-auto pt-1 ma-2" max-width="600" rounded="xl">
+        <v-card-text>
+          <div class="center-text">
+            <h1 class="display-1 font-weight-bold">
+              LiliumNeko<br class="display-less-540" />
+              ❤️<br class="display-less-540" />
+              LemonNeko
+            </h1>
+          </div>
+        </v-card-text>
+      </v-card>
+    </v-col>
+    <v-col>
+      <v-card class="mx-auto pt-1 pl-8 pr-8 ma-2" max-width="600" rounded="xl">
+        <v-card-text>
+                  <v-form v-model="valid">
+            <v-row>
+              <v-spacer>
+                <v-col>
+                  <v-text-field
+                    v-model="nickname"
+                    :rules="nameRules"
+                    :counter="10"
+                    label="阁下的昵称"
+                    dense
+                    clearable
+                    required
+                    shaped
+                  ></v-text-field>
+                </v-col>
 
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br />please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank"
-            >Discord Community</a
-          >
-        </p>
-      </v-col>
+                <v-col>
+                  <v-text-field
+                    v-model="email"
+                    :rules="emailRules"
+                    label="电子邮件地址"
+                    dense
+                    clearable
+                    required
+                  ></v-text-field>
+                </v-col>
 
-      <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-row>
-      </v-col>
-    </v-row>
+                <v-col align-self="center">
+                  <v-btn block rounded color="primary" dark large elevation="0">
+                    提交
+                  </v-btn>
+                </v-col>
+              </v-spacer>
+            </v-row>
+        </v-form>
+        </v-card-text>
+      </v-card>
+    </v-col>
   </v-container>
 </template>
 
 <script>
 export default {
   name: "Welecome",
-
   data: () => ({
-    ecosystem: [
-      {
-        text: "vuetify-loader",
-        href: "https://github.com/vuetifyjs/vuetify-loader",
-      },
-      {
-        text: "github",
-        href: "https://github.com/vuetifyjs/vuetify",
-      },
-      {
-        text: "awesome-vuetify",
-        href: "https://github.com/vuetifyjs/awesome-vuetify",
-      },
+    valid: false,
+    nickname: "",
+    nameRules: [
+      (v) => !!v || "昵称为必填项",
+      (v) => v.length <= 15 || "昵称须小于15个字符",
     ],
-    importantLinks: [
-      {
-        text: "Documentation",
-        href: "https://vuetifyjs.com",
-      },
-      {
-        text: "Chat",
-        href: "https://community.vuetifyjs.com",
-      },
-      {
-        text: "Made with Vuetify",
-        href: "https://madewithvuejs.com/vuetify",
-      },
-      {
-        text: "Twitter",
-        href: "https://twitter.com/vuetifyjs",
-      },
-      {
-        text: "Articles",
-        href: "https://medium.com/vuetify",
-      },
-    ],
-    whatsNext: [
-      {
-        text: "Explore components",
-        href: "https://vuetifyjs.com/components/api-explorer",
-      },
-      {
-        text: "Select a layout",
-        href: "https://vuetifyjs.com/getting-started/pre-made-layouts",
-      },
-      {
-        text: "Frequently Asked Questions",
-        href:
-          "https://vuetifyjs.com/getting-started/frequently-asked-questions",
-      },
+    email: "",
+    emailRules: [
+      (v) => !!v || "电子邮件为必填项",
+      (v) => /.+@.+/.test(v) || "无效的电子邮件地址",
     ],
   }),
 };
 </script>
-<style>
+<style scoped>
 .background {
   background: linear-gradient(
       rgba(255, 0, 0, 0.3) 50%,
@@ -136,5 +88,16 @@ export default {
     );
   background-size: 50px 50px;
   height: 100%;
+}
+.center-text {
+  text-align: center;
+}
+.display-less-540 {
+  display: none;
+}
+@media screen and (max-width: 540px) {
+  .display-less-540 {
+    display: unset;
+  }
 }
 </style>
