@@ -2706,6 +2706,11 @@ core-js-compat@^3.6.5, core-js-compat@^3.9.0, core-js-compat@^3.9.1:
     browserslist "^4.16.4"
     semver "7.0.0"
 
+core-js@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.nlark.com/core-js/download/core-js-3.11.0.tgz#05dac6aa70c0a4ad842261f8957b961d36eb8926"
+  integrity sha1-BdrGqnDApK2EImH4lXuWHTbriSY=
+
 core-js@^3.6.5:
   version "3.10.2"
   resolved "https://registry.nlark.com/core-js/download/core-js-3.10.2.tgz?cache=0&sync_timestamp=1618851955289&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcore-js%2Fdownload%2Fcore-js-3.10.2.tgz#17cb038ce084522a717d873b63f2b3ee532e2cd5"
@@ -8293,10 +8298,10 @@ vuetify-loader@^1.7.0:
     file-loader "^6.2.0"
     loader-utils "^2.0.0"
 
-vuetify@^2.4.10:
-  version "2.4.10"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.4.10.tgz#e3989f3c3fa49dbb62534ba3aeca8dc890e43bab"
-  integrity sha512-ic/qg2dtXdWpCxQteyErBcBpzPvk/66u+RJOw57spZvd4BkhDUjUcOGWAruePfWmwnRryCNvpjbLZRjdt8k5BA==
+vuetify@^2.4.11:
+  version "2.4.11"
+  resolved "https://registry.nlark.com/vuetify/download/vuetify-2.4.11.tgz#3aba19a32cd89c5dce523260f589cf95d90e2dce"
+  integrity sha1-OroZoyzYnF3OUjJg9YnPldkOLc4=
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"
