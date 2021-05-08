@@ -1,6 +1,11 @@
 <template>
   <v-app>
-    <v-app-bar app flat>
+    <v-system-bar app class="secondary" style="height: 50px;">
+      <div class="container font-weight-black text-body-2 text-md-h6 text-center white--text"> 🎉
+        活动马上要开始了哦~
+      </div>
+    </v-system-bar>
+    <v-app-bar app flat >
       <v-tabs>
         <v-spacer></v-spacer>
         <v-tab to="/">欢迎</v-tab>

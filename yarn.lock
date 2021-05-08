@@ -2706,10 +2706,10 @@ core-js-compat@^3.6.5, core-js-compat@^3.9.0, core-js-compat@^3.9.1:
     browserslist "^4.16.4"
     semver "7.0.0"
 
-core-js@^3.11.0:
-  version "3.11.0"
-  resolved "https://registry.nlark.com/core-js/download/core-js-3.11.0.tgz#05dac6aa70c0a4ad842261f8957b961d36eb8926"
-  integrity sha1-BdrGqnDApK2EImH4lXuWHTbriSY=
+core-js@^3.11.1:
+  version "3.11.1"
+  resolved "https://registry.nlark.com/core-js/download/core-js-3.11.1.tgz?cache=0&sync_timestamp=1619708029123&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcore-js%2Fdownload%2Fcore-js-3.11.1.tgz#f920392bf8ed63a0ec8e4e729857bfa3d121c525"
+  integrity sha1-+SA5K/jtY6Dsjk5ymFe/o9EhxSU=
 
 core-js@^3.6.5:
   version "3.10.2"
@@ -7087,10 +7087,10 @@ sass-loader@^10.0.0:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.32.0:
-  version "1.32.11"
-  resolved "https://registry.nlark.com/sass/download/sass-1.32.11.tgz#b236b3ea55c76602c2ef2bd0445f0db581baa218"
-  integrity sha1-sjaz6lXHZgLC7yvQRF8NtYG6ohg=
+sass@^1.32.12:
+  version "1.32.12"
+  resolved "https://registry.nlark.com/sass/download/sass-1.32.12.tgz#a2a47ad0f1c168222db5206444a30c12457abb9f"
+  integrity sha1-oqR60PHBaCIttSBkRKMMEkV6u58=
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
@@ -8212,10 +8212,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
-vue-cli-plugin-vuetify@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.npm.taobao.org/vue-cli-plugin-vuetify/download/vue-cli-plugin-vuetify-2.3.1.tgz#9e45a686902351320e876881d057eb69c646a22b"
-  integrity sha1-nkWmhpAjUTIOh2iB0FfracZGois=
+vue-cli-plugin-vuetify@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.nlark.com/vue-cli-plugin-vuetify/download/vue-cli-plugin-vuetify-2.4.0.tgz#e3eca6a51592a1610b2006296efc31c52981b031"
+  integrity sha1-4+ympRWSoWELIAYpbvwxxSmBsDE=
   dependencies:
     null-loader "^3.0.0"
     semver "^7.1.2"
